@@ -6,6 +6,11 @@ app.config(function($routeProvider){
     templateUrl: "home.html"
   });
 
+  $routeProvider.when('/pledge',{
+  // controller: '',
+  templateUrl: "pledge.html"
+});
+
     $routeProvider.when('/userLogin',{
     // controller: '',
     templateUrl: "userLogin.html"
