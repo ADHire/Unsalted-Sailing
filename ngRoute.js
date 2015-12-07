@@ -41,7 +41,7 @@ app.config(function($routeProvider){
   templateUrl: "userInterface.html"
 });
 
-$routeProvider.when('/createTopic',{
+  $routeProvider.when('/createTopic',{
   // controller: '',
   templateUrl: "createTopic.html"
 });
