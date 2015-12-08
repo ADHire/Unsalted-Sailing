@@ -2,14 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blarghllll</title>
-    <script src="js/twitter.js"></script>
+    <!-- Project Title -->
+    <title>PrepMe</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-    <a class="twitter-timeline" href="https://twitter.com/FeelBackApp" data-widget-id="673977872252555264">Tweets by @FeelBackApp</a>
+
+<body ng-app="prepModule"> <!-- Applying prepModule to the body -->
+	
+	<ng-view></ng-view> <!-- ng-View and ng-Route working together to display views -->
+
+	<!-- Basic mock up for demonstrating our links and flow of the navigation -->
+	<div id="menu">
+		<button type="button">Three Lines</button>
+		<ul>
+			<div class="menuProfile">
+				<li><a href="#/profile">Profie</a></li>
+				<img src="myProfile">
+			</div>
+			<hr>
+			<div class="menuMyPrep">
+				<li><a href="#/menu">My Prep</a></li>
+				<img src="myPrep">
+			</div>
+			<hr>
+			<div class="menuCompanies">
+				<li><a href="#/companyInfo">Companies</a></li>
+				<img src="myCompany">
+			</div>
+			<hr>
+			<div class="menuCompanies">
+				<li><a href="#/companyLists">List of Companies</a></li>
+				<img src="myCompany">
+			</div>
+		</ul>
+	</div>
 
 
-
-
+	<!-- JavaScript/JQuery/Angular CDN's -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+    <script src="js/prepModule.js"></script>
 </body>
 </html>
