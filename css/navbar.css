@@ -6,7 +6,7 @@ body {
   z-index: 1000;
   position: fixed;
   top: 0px;
-  width: 35%;
+  width: 350px;
   height: 100%;
   clear: both;
   background-color: #112938;
@@ -40,7 +40,7 @@ body {
   text-decoration: none;
   display: block;
   color: #FEFEFE;
-  line-height: 36px;
+  line-height: 4em;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -61,6 +61,9 @@ body {
   transition-timing-function: ease-out;
   direction: ltr;
 }
+.fa{
+padding: .75em;
+}
 
 #navbar ul li a:hover {
   color: #DC635F;
@@ -69,6 +72,10 @@ body {
 /*the menu icon*/
 #icon {
   width: 140px;
+}
+#icon:hover{
+  color: #DC635F;
+
 }
 
 
