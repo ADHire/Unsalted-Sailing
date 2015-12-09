@@ -11,8 +11,8 @@ app.config(function($routeProvider){
       templateUrl: "/views/profile/profile.html",
       controller: 'routeCtrl'
    });
-   $routeProvider.when('/menu',{
-      templateUrl: "/views/menu/menu.html",
+   $routeProvider.when('/myPrep',{
+      templateUrl: "/views/myPrep/myPrep.html",
       controller: 'routeCtrl'
    });
    $routeProvider.when('/companyInfo',{

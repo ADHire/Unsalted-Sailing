@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title> #FEELBACK</title>
-</head>
-<body>
-<script type="text/javascript" src="ngRoute.js" ></script>
-<script type="text/javascript" src="passport.js" ></script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,20 +15,15 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="css/profile.css">
 
+    <!-- Parse -->
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
+
 </head>
 
 <body ng-app="prepModule"> <!-- Applying prepModule to the body -->
 	
 	<ng-view></ng-view> <!-- ng-View and ng-Route working together to display views -->
-
-
-
-	<hr>
-	<br>
-	<hr>
-	<br>
-	<hr>
-	<br>
+	
 	<!-- Basic mock up for demonstrating our links and flow of the navigation -->
 	<div id="menu">
 		<button type="button">Three Lines</button>
@@ -46,7 +34,7 @@
 			</div>
 			<hr>
 			<div class="menuMyPrep">
-				<li><a href="#/menu">My Prep</a></li>
+				<li><a href="#/myPrep">My Prep</a></li>
 				<img src="myPrep">
 			</div>
 			<hr>
