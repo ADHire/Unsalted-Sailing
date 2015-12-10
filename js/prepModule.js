@@ -3,6 +3,11 @@ var app = angular.module('prepModule', ['ngRoute']);
 
 // Routing and view switching
 app.config(function($routeProvider){
+
+   $routeProvider.when('/myPrep',{
+   templateUrl: "/views/myPrep/myPrep.html",
+   controller: 'showImages'
+   });
    $routeProvider.when('/login',{
       templateUrl: "/views/login/login.html",
       controller: 'routeCtrl'
