@@ -1,4 +1,0 @@
-<div ng-controller="showImages" ng-repeat="p in pictures" class="landing"> 
-    <img class="landing" ng-src="{{p}}">
-    This is v1
-</div>
