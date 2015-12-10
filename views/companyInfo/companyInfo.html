@@ -1,5 +1,6 @@
-<div id="profileHeader">
-	<img src="ojasdfosajfasf">
+<div id="profileHeader" onload="checkEdits()">
+
+	<img src="">
 	<h3>Company Name</h3>
 	<ul>
 	    <li><a href="https://twitter.com/maddy_531"><i class="fa fa-3x fa-twitter"></i></a></li>
@@ -8,13 +9,22 @@
 	</ul>
 </div>
 <hr>
-<div id="profileRow">
-	<div id="profileCat">
-		<p class="profileHead">Blargl</p>
+<div id="companyRow">
+	<div id="companyTextedit" contenteditable="true">
+		<h3 class="titleBox" contenteditable="true">Skills</h3>
+		<p class="companyText">I'm the best.</p>
 	</div>
+	<hr>
 </div>
-<hr>
-	<div id="profileText">
-		<p class="profileText">I'm the best.</p>
+
+	<h4>Test stuffs</h4>
+	<div class="testEdit" ng-controller="Ctrl">
+		<p>
+			stuff that you edit
+		</p>
+	  <a href="#" editable-text="user.name">{{ user.name || 'empty' }}</a>
 	</div>
-</div>
+
+
+
+</body>
