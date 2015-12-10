@@ -1,8 +1,12 @@
 // Module created and named
-var app = angular.module('prepModule', ['ngRoute']); 
-
+var app = angular.module('prepModule', ['ngRoute']);
 // Routing and view switching
 app.config(function($routeProvider){
+
+   $routeProvider.when('/myPrep',{
+   templateUrl: "/views/myPrep/myPrep.html",
+   controller: 'showImages'
+   });
    $routeProvider.when('/login',{
       templateUrl: "/views/login/login.html",
       controller: 'routeCtrl'
@@ -24,7 +28,6 @@ app.config(function($routeProvider){
       controller: 'routeCtrl'
    });
 });
-
 // Controller creation
 app.controller('routeCtrl', function(){
 	console.log("test");

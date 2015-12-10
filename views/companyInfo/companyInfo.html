@@ -1,3 +1,5 @@
+<div id="profileHeader">
+
 <div class="row">
 	<div id="profileHeader" class="col-xs-12">
 		<div class="profilePicture">
@@ -20,9 +22,16 @@
 	<hr>
 
 <div class="row" class="col-xs-12">
+	<div class="row" class="col-xs-12">
+		<div id="profileRow">
+			<h4 class="profileHead col-xs-4" contenteditable="true">Job Description</h4>
+			<p class="profileText col-x-8" contenteditable="">Becoming the most amazing instructor this camp has ever seen.</p>
+		</div>
+	</div>
+	<hr>
 	<div id="profileRow">
-		<h4 class="profileHead col-xs-4">Product</h4>
-		<p class="profileText col-x-8">Turning zeroes into heroes. </p>
+		<h4 class="profileHead col-xs-4" contenteditable="true">Product</h4>
+		<p class="profileText col-x-8" contenteditable="true">Turning zeroes into heroes. </p>
 	</div>
 </div>
 
@@ -30,16 +39,24 @@
 
 <div class="row" class="col-xs-12">
 	<div id="profileRow">
-		<h4 class="profileHead col-xs-4">Bio</h4>
-		<p class="profileText col-x-8">Grand Circus is passionate about training people for amazing careers in tech and helping local businesses grow by hiring local tech superstars. Our bootcamps serve both purposes: we give people critical skills for tech jobs while introducing them to businesses looking for talent.</p>
-	</div>
+		<h4 class="profileHead col-xs-4" contenteditable="true">Bio</h4>
+		<p class="profileText col-x-8" contenteditable="true">Grand Circus is passionate about training people for amazing careers in tech and helping local businesses grow by hiring local tech superstars. Our bootcamps serve both purposes: we give people critical skills for tech jobs while introducing them to businesses looking for talent.</p>
+</div>
+	<hr>
 </div>
 
+	<h4>Test stuffs</h4>
+	<div class="testEdit" ng-controller="Ctrl">
+		<p>
+			stuff that you edit
+		</p>
+	  <a href="#" editable-text="user.name">{{ user.name || 'empty' }}</a>
+	</div>
+
+
+
+</body>
 	<hr>
 
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4">Job Description</h4>
-		<p class="profileText col-x-8">Becoming the most amazing instructor this camp has ever seen.</p>
-	</div>
-</div>
+
+>>>>>>> master
