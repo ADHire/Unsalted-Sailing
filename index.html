@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 
@@ -18,15 +18,18 @@
 		<!-- Nav CSS -->
 		<link href="css/navbar.css" rel="stylesheet" type="text/css">
 
-    <!-- editCompanyInfo css -->
+    <!-- editCompanyInfo CSS -->
     <link href="css/editCompanyInfo.css" rel="stylesheet" type="text/css">
+    
+    <!-- media queries CSS-->
+    <link href="mediaqueries.css" rel="stylesheet" />
 
+    <!-- Parse -->
+    <script src="//www.parsecdn.com/js/parse-1.6.7.min.js"></script>
 
 </head>
 
 <body ng-app="prepModule"> <!-- Applying prepModule to the body -->
-
-
 
 	<ng-view></ng-view> <!-- ng-View and ng-Route working together to display views -->
 
@@ -38,6 +41,7 @@
 				</a></li>
 			<li><a class="nav-icon" href="#/companyLists">Companies<i class="fa fa-building-o fa-3x"></i></a>
 				</a></li>
+
 
 		</ul>
 	</nav>

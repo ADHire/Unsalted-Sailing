@@ -56,7 +56,6 @@
 
 #profileRow {
 	margin-top: 10px;
-	border: 2px solid black;
 	height: 150px;
 
 }
@@ -76,4 +75,8 @@
 #profileRow p {
 	margin: 10px 15px 10px 15px;
 	text-align: vertical right;
+}
+
+.companyBlocks {
+	margin-top: 10px;
 }
