@@ -142,4 +142,21 @@
 			</ul>
 		</div>
 	</div>
+
+	<div ng-controller="myController">
+	
+		<ul>
+			<li ng-repeat="company in companies">{{ company.name }} {{company.linked }}</li>
+		</ul>
+		
+		<input type="text" placeholder="Company"  ng-model="newCompany"></input>
+		<input type="text" placeholder="" ng-model="newLinked"></input>
+		<button ng-click="addCompany()">Add Me!</button>
+
+	</div>
+
+
+
+
 </div>
+

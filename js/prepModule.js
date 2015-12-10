@@ -27,4 +27,5 @@ app.config(function($routeProvider){
 
 // Controller creation
 app.controller('routeCtrl', function(){
+	console.log("test");
 });
