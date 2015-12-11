@@ -1,4 +1,4 @@
-var app = angular.module('myMood',[]);
+var app = angular.module('prepModule');
 
 	app.controller('showImages', function($scope, $http){
 
