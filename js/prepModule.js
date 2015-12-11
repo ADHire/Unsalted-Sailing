@@ -2,10 +2,6 @@
 var app = angular.module('prepModule', ['ngRoute', 'ngStorage']);
 // Routing and view switching
 app.config(function($routeProvider){
-   $routeProvider.when('/', {
-     template: "<h1>blah</h1>",
-     controller: 'routeCtrl'
-   });
 
    $routeProvider.when('/login',{
       templateUrl: "/views/login/login.html",
@@ -28,6 +24,8 @@ app.config(function($routeProvider){
       controller: 'routeCtrl'
    });
 });
+
+// Storage stuffs
 app.controller("routeCtrl", function($scope, $localStorage) {
     console.log('anything');
     $scope.saveData = function() {
