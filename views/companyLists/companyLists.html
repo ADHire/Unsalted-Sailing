@@ -145,11 +145,8 @@
 
 // function for adding another company
 <div class="addNewCompany">
-	<ul>
-		<li ng-repeat="company in companies">{{ company.name }} {{company.linked }}</li>
-	</ul>
+		<div ng-repeat="company in companies">{{ company.name }} {{company.linked }}</div>
 	<input type="text" placeholder="Company"  ng-model="newCompany"></input>
-	<input type="text" placeholder="" ng-model="newLinked"></input>
-	<button ng-click="addCompany()">Add Me!</button>
+	<a ng-click="addCompany()"><i class="fa fa-plus-circle fa-3x"></i></a>
 
 </div>

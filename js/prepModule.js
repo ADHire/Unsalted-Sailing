@@ -24,7 +24,7 @@ app.config(function($routeProvider){
    });
    $routeProvider.when('/companyLists',{
       templateUrl: "/views/companyLists/companyLists.html",
-      controller: 'routeCtrl'
+      controller: 'myController'
    });
 });
 
