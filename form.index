@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Shopping List Angular</title>
+	<title></title>
 </head>
 <body ng-app="myModule">
 	<h1>SUBMITFORM</h1>
@@ -22,4 +22,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script type="text/javascript" src="form.js"></script>
 </body>
+
+
 </html>
+
