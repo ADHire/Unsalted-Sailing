@@ -1,21 +1,18 @@
-
-var app = angular.module('myModule', []);
-
 app.controller('myController', function($scope) { 
   $scope.companies = [
-  	{company: 'Grand Circus', linked : "#"}
+  	{company: 'Grand Circus', 
+  	linked : "#"}
   
 	];
 
-	$scope.AddCompanies = function() {
+	$scope.addCompany = function() {
 		$scope.companies.push(
-			{company: $scope.NewCompany,
-			linked: $scope.NewLinked}
-			)
+			{company: $scope.newCompany,
+			linked: $scope.newLinked});
+			
 		
-		$scope.NewCompany = " ";
-		$scope.NewLinked = " ";
-	};
+	
+	}
 
 	
 }); 

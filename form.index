@@ -13,9 +13,9 @@
 			<li ng-repeat="company in companies">{{ company.company }} {{company.linked }}</li>
 		</ul>
 		
-		<input type="text" placeholder="Company"  ng-model="NewCompany"></input>
-		<input type="text" placeholder="" ng-model="NewLinked"></input>
-		<button ng-click="AddCompanies()">Add Me!</button>
+		<input type="text" placeholder="Company"  ng-model="newCompany"></input>
+		<input type="text" placeholder="" ng-model="newLinked"></input>
+		<button ng-click="addCompany()">Add Me!</button>
 
 	</div>
 		
