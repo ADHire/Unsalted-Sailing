@@ -148,5 +148,4 @@ $.fn.navbar = function(options){
     });
 
 };//donezoooh
-
 })(jQuery);
