@@ -1,0 +1,5 @@
+.titleBox {
+  border-bottom: 3px solid white;
+  display: inline;
+}
+div[ng-app] { margin: 50px; }
