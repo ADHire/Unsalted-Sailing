@@ -3,6 +3,7 @@
 		<div class="profilePicture">
 			<img src="../../img/profilePictures/taylorSwift-small.jpg" class="img-rounded">
 		</div>
+
 		<div class="profileNameLink">
 			<a href="#/companyInfo"><div id="nameBorder">
 				<h3><small>Grand</small>Circus</h3>
@@ -15,15 +16,17 @@
 		</div>
 	</div>
 </div>
+
 <hr>
+
 <div class="row companyBlocks">
 	<div id="profileHeader" class="col-xs-12">
 		<div class="profilePicture">
 			<img src="../../img/profilePictures/taylorSwift-small.jpg" class="img-rounded">
 		</div>
+
 		<div class="profileNameLink">
 			<div id="nameBorder">
-				<a href="#/companyInfo">
 				<h3><small>IZI</small>Mobile</h3>
 			</div>
 			<ul>
@@ -34,15 +37,17 @@
 		</div>
 	</div>
 </div>
+
 <hr>
+
 <div class="row companyBlocks">
 	<div id="profileHeader" class="col-xs-12">
 		<div class="profilePicture">
 			<img src="../../img/profilePictures/taylorSwift-small.jpg" class="img-rounded">
 		</div>
+
 		<div class="profileNameLink">
 			<div id="nameBorder">
-				<a href="#/companyInfo">
 				<h3><small>AMBR</small>Detroit</h3>
 			</div>
 			<ul>
@@ -53,15 +58,17 @@
 		</div>
 	</div>
 </div>
+
 <hr>
+
 <div class="row companyBlocks">
 	<div id="profileHeader" class="col-xs-12">
 		<div class="profilePicture">
 			<img src="../../img/profilePictures/taylorSwift-small.jpg" class="img-rounded">
 		</div>
+
 		<div class="profileNameLink">
 			<div id="nameBorder">
-				<a href="#/companyInfo">
 				<h3><small>Detroit</small>Labs</h3>
 			</div>
 			<ul>
@@ -72,15 +79,17 @@
 		</div>
 	</div>
 </div>
+
 <hr>
+
 <div class="row companyBlocks">
 	<div id="profileHeader" class="col-xs-12">
 		<div class="profilePicture">
 			<img src="../../img/profilePictures/taylorSwift-small.jpg" class="img-rounded">
 		</div>
+
 		<div class="profileNameLink">
 			<div id="nameBorder">
-				<a href="#/companyInfo">
 				<h3><small>Level</small>Eleven</h3>
 			</div>
 			<ul>
@@ -91,15 +100,17 @@
 		</div>
 	</div>
 </div>
+
 <hr>
+
 <div class="row companyBlocks">
 	<div id="profileHeader" class="col-xs-12">
 		<div class="profilePicture">
 			<img src="../../img/profilePictures/taylorSwift-small.jpg" class="img-rounded">
 		</div>
+
 		<div class="profileNameLink">
 			<div id="nameBorder">
-				<a href="#/companyInfo">
 				<h3><small>Quicken</small>Loans</h3>
 			</div>
 			<ul>
@@ -110,15 +121,17 @@
 		</div>
 	</div>
 </div>
+
 <hr>
+
 <div class="row companyBlocks">
 	<div id="profileHeader" class="col-xs-12">
 		<div class="profilePicture">
 			<img src="../../img/profilePictures/taylorSwift-small.jpg" class="img-rounded">
 		</div>
+
 		<div class="profileNameLink">
 			<div id="nameBorder">
-				<a href="#/companyInfo">
 				<h3><small></small>Spotify</h3>
 			</div>
 			<ul>
@@ -128,4 +141,20 @@
 			</ul>
 		</div>
 	</div>
+
+	<div ng-controller="myController">
+
+		<ul>
+			<li ng-repeat="company in companies">{{ company.name }} {{company.linked }}</li>
+		</ul>
+
+		<input type="text" placeholder="Company"  ng-model="newCompany"></input>
+		<input type="text" placeholder="" ng-model="newLinked"></input>
+		<button ng-click="addCompany()">Add Me!</button>
+
+	</div>
+
+
+
+
 </div>

@@ -1,0 +1,27 @@
+// need to go over this file
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List Angular</title>
+</head>
+<body ng-app="myModule">
+	<h1>SUBMITFORM</h1>
+
+	<div ng-controller="myController">
+
+		<ul>
+			<li ng-repeat="company in companies">{{ company.company }} {{company.linked }}</li>
+		</ul>
+
+		<input type="text" placeholder="Company"  ng-model="NewCompany"></input>
+		<input type="text" placeholder="" ng-model="NewLinked"></input>
+		<button ng-click="AddCompanies()">Add Me!</button>
+
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript" src="form.js"></script>
+</body>
+</html>

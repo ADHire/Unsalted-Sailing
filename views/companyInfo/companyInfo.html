@@ -1,30 +1,61 @@
-<div id="profileHeader" onload="checkEdits()">
+<div id="profileHeader">
 
-	<img src="">
-	<h3>Company Name</h3>
-	<ul>
-	    <li><a href="https://twitter.com/maddy_531"><i class="fa fa-3x fa-twitter"></i></a></li>
-	    <li><a href="https://www.linkedin.com/in/maddyandrade"><i class="fa fa-3x fa-linkedin"></i></a></li>
-	    <li><a href="https://github.com/maddy531"><i class="fa fa-3x fa-github"></i></a></li>
-	</ul>
-</div>
-<hr>
-<div id="companyRow">
-	<div id="companyTextedit" contenteditable="true">
-		<h3 class="titleBox" contenteditable="true">Skills</h3>
-		<p class="companyText">I'm the best.</p>
+<div class="row">
+	<div id="profileHeader" class="col-xs-12">
+		<div class="profilePicture">
+			<img src="../../img/companyPictures/gc-small.png" class="img-rounded">
+		</div>
+
+		<div class="profileNameLink">
+			<div id="nameBorder">
+				<h3><small>Grand</small>Circus</h3>
+			</div>
+			<ul>
+			    <li><a href="https://twitter.com/GrandCircusCo"><i class="fa fa-twitter fa-3x"></i></a></li>
+			    <li><a href="https://www.linkedin.com/company/grand-circus"><i class="fa fa-linkedin fa-3x"></i></a></li>
+			    <li><a href="https://www.github.com"><i class="fa fa-github fa-3x"></i></a></li>
+			</ul>
+		</div>
 	</div>
+</div>
+
 	<hr>
+
+<div class="row" class="col-xs-12">
+	<div class="row" class="col-xs-12">
+		<div id="profileRow">
+			<h4 class="profileHead col-xs-4" contenteditable="true">Job Description</h4>
+			<p class="profileText col-x-8" contenteditable="">Becoming the most amazing instructor this camp has ever seen.</p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id="profileRow">
+		<h4 class="profileHead col-xs-4" contenteditable="true">Product</h4>
+		<p class="profileText col-x-8" contenteditable="true">Turning zeroes into heroes. </p>
+	</div>
 </div>
 
-	<h4>Test stuffs</h4>
-	<div class="testEdit" ng-controller="Ctrl">
-		<p>
-			stuff that you edit
-		</p>
-	  <a href="#" editable-text="user.name">{{ user.name || 'empty' }}</a>
+	<hr>
+
+<div class="row" class="col-xs-12">
+	<div id="profileRow">
+		<h4 class="profileHead col-xs-4" contenteditable="true">Bio</h4>
+		<p class="profileText col-x-8" contenteditable="true">Grand Circus is passionate about training people for amazing careers in tech and helping local businesses grow by hiring local tech superstars. Our bootcamps serve both purposes: we give people critical skills for tech jobs while introducing them to businesses looking for talent.</p>
+</div>
+	<hr>
+
+
+			<div ng-controller="routeCtrl">
+					<button ng-click="loadData()">Load</button>
+					<button ng-click="saveData()">Save</button>
+					<br>
+					Some message: {{message}} //add service
+			</div>
 	</div>
 
 
+</div>
 
-</body>
+	<hr>

@@ -1,7 +1,12 @@
 // Module created and named
-var app = angular.module('prepModule', ['ngRoute']);
+var app = angular.module('prepModule', ['ngRoute', 'ngStorage']);
 // Routing and view switching
 app.config(function($routeProvider){
+   $routeProvider.when('/', {
+     template: "<h1>blah</h1>",
+     controller: 'routeCtrl'
+   });
+
    $routeProvider.when('/login',{
       templateUrl: "/views/login/login.html",
       controller: 'routeCtrl'
@@ -23,7 +28,14 @@ app.config(function($routeProvider){
       controller: 'routeCtrl'
    });
 });
-// Controller creation
-app.controller('routeCtrl', function(){
-	console.log("test");
+app.controller("routeCtrl", function($scope, $localStorage) {
+    console.log('anything');
+    $scope.saveData = function() {
+        $localStorage.message = "Hello World";
+        console.log('hello');
+    };
+
+    $scope.loadData = function() {
+        $scope.message = $localStorage.message;
+    };
 });

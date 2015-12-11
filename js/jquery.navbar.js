@@ -1,5 +1,3 @@
-
-
 (function($){
   $(function(){
     $("#navbar").navbar({
@@ -31,7 +29,6 @@ $.fn.navbar = function(options){
             options.position=settings.position;
         }
 
-
         // First icon position
         if (options.position == 'right'){
             $menu_icon.addClass('right').removeClass('hidden');
@@ -50,7 +47,6 @@ $.fn.navbar = function(options){
             }
         });//click
 
-
         //Adds and removes classes and adds transition(easeOut is a transition)
         function openLeft(){
             $sided_menu.addClass('right').removeClass('hidden').animate({
@@ -67,7 +63,7 @@ $.fn.navbar = function(options){
                 left:"300",
                 backgroundPosition: '-60px',
             },600,'easeOutExpo');
-        };
+        }
         function closeLeft(){
             $sided_menu.animate({
                 right:"+=300",
@@ -80,29 +76,28 @@ $.fn.navbar = function(options){
                 left:"10",
                 backgroundPosition: '0px',
             },700,'easeOutExpo');
-        };
+        }
         function navbarLeft(){
-            if( $menu_open == false){
+            if( $menu_open === false){
                 openLeft();
                 $menu_open = true;
             } else{
                 closeLeft();
                 $menu_open = false;
             }
-        };//navbarLeft
-
+        } //navbarLeft
 
         // Position the menu onResize
         function positionNav(){
             var $containerWidth = $(window).width();
 
-            if ($menu_open == false) {
+            if ($menu_open === false) {
                 if (options.position == 'right'){
                     $sided_menu.css({
                         left: $containerWidth,
                     });
                 }
-                if (options.position == 'left'){
+                if (options.position === 'left'){
                     $sided_menu.css({
                         right: $containerWidth,
                     });
@@ -126,10 +121,9 @@ $.fn.navbar = function(options){
             positionNav();
         });//resize
 
-
     // Scrolling
     $(window).bind('scroll',function(e){
-        if(($(window).scrollTop() >=500) && ($menu_open == true)){
+        if(($(window).scrollTop() >=500) && ($menu_open === true)){
             if(!options.scroll){
                 // We could't grab options
                 // Set options to settings & Run defaults
