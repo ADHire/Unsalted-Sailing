@@ -31,14 +31,16 @@ function loginCallback(result) {
 
             var googleFirstName = resp['name']['familyName'];
             var googleLastName = resp['name']['givenName'];
-            var googleImg = "Image:" + resp['image']['url'];
+            var googleImg = resp['image']['url'];
             var googleImgSrc = "<img src='" + resp['image']['url'] + "' />";
             var googleURL = "URL:" + resp['url'];
-            var googleEmail = "Email:" + email;
+            var googleEmail = email;
             var googleEducation = resp['organizations'][0]['name'];
             document.getElementById("googleFirstName").innerHTML = googleFirstName;
             document.getElementById("googleLastName").innerHTML = googleLastName;
             document.getElementById("googleEducation").innerHTML = googleEducation;
+            document.getElementById("googleEmail").innerHTML = googleEmail;
+            document.getElementById("googleImg").src = googleImg;
             console.log("profile");
         });
 
