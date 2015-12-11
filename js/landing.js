@@ -26,7 +26,7 @@ app.controller('showImages', function($scope, $http){
 
 
 		var tag = $scope.pictures[current];
-		var container = document.getElementById("test");
+		var container = document.getElementById("foo");
 		console.log(container);
 
 		container.src=tag;

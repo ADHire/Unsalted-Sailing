@@ -2,7 +2,10 @@
 var app = angular.module('prepModule', ['ngRoute', 'ngStorage']);
 // Routing and view switching
 app.config(function($routeProvider){
-
+  $routeProvider.when('/landing',{
+     templateUrl: "/views/landing/landing.html",
+     controller: 'showImages'
+  });
    $routeProvider.when('/login',{
       templateUrl: "/views/login/login.html",
       controller: 'routeCtrl'
