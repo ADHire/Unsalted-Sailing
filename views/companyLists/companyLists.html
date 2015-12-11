@@ -1,4 +1,3 @@
-
 <div class="row companyBlocks">
 	<div id="profileHeader" class="col-xs-12">
 		<div class="profilePicture">
@@ -142,4 +141,24 @@
 			</ul>
 		</div>
 	</div>
+
+
+	<div ng-controller="myController">
+	
+		<ul>
+			<li ng-repeat="company in companies">{{ company.name }} {{company.linked }}</li>
+		</ul>
+		
+		<input type="text" placeholder="Company"  ng-model="newCompany"></input>
+		<input type="text" placeholder="" ng-model="newLinked"></input>
+		<button ng-click="addCompany()">Add Me!</button>
+
+	</div>
+
+
+
+
 </div>
+
+</div>
+
