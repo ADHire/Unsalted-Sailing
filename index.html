@@ -21,13 +21,6 @@
     <!-- editCompanyInfo CSS -->
     <link href="css/editCompanyInfo.css" rel="stylesheet" type="text/css">
 
-    <!-- companyListsModel css  -->
-    <!-- <link href="css/companyListModel.css" rel="stylesheet" type="text/css"> -->
-
-    <!-- New company form css -->
-    <!-- <link href="css/addNewCompanyFormStyle.css" rel="css/stylesheet" type="text/css" > -->
-
-
 </head>
 
 <body ng-app="prepModule"> <!-- Applying prepModule to the body -->
@@ -42,10 +35,10 @@
   			</a></li>
   		<li><a class="nav-icon" href="#/companyLists">Companies<i class="fa fa-building-o fa-3x"></i></a>
   			</a></li>
-        <li><a class="nav-icon" onclick="logout()">Logout<i class="fa fa-sign-out fa-3x"></i></a>
-          </a></li>
-          <li><a class="nav-icon" onclick="login()">login<i class="fa fa-sign-out fa-3x"></i></a>
-            </a></li>
+      <li><div class="g-signin2" data-onsuccess="onSignIn">Login</div>
+        </a></li>
+      <li><a class="nav-icon" onclick="signOut()">Logout<i class="fa fa-sign-out fa-3x"></i></a>
+        </a></li>
   	</ul>
   </nav>
 
