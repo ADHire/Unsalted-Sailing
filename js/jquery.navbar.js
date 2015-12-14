@@ -45,6 +45,7 @@ $.fn.navbar = function(options){
             if (options.position == 'left'){
                 navbarLeft();
             }
+
         });//click
 
         //Adds and removes classes and adds transition(easeOut is a transition)
@@ -57,7 +58,7 @@ $.fn.navbar = function(options){
                 zIndex:"999",
                 right:"-=150"
             },300,'easeOutExpo').css({
-                position: 'absolute'
+                position: 'relative' //this was messing with the body's position
             });
             $menu_icon.animate({
                 left:"300",
@@ -81,11 +82,13 @@ $.fn.navbar = function(options){
             if( $menu_open === false){
                 openLeft();
                 $menu_open = true;
+
             } else{
                 closeLeft();
-                $menu_open = false;
+                $menu_open = false; //open and closes nav
             }
-        } //navbarLeft
+        }
+        //navbarLeft
 
         // Position the menu onResize
         function positionNav(){
@@ -97,18 +100,10 @@ $.fn.navbar = function(options){
                         left: $containerWidth,
                     });
                 }
-                if (options.position === 'left'){
-                    $sided_menu.css({
-                        right: $containerWidth,
-                    });
-                }
+
             }
             else {
-                if (options.position == 'right'){
-                    $sided_menu.css({
-                        left: ($containerWidth) - ('300'),
-                    });
-                }
+
                 if (options.position == 'left'){
                     $sided_menu.css({
                         right: ($containerWidth) - ('300'),
@@ -148,5 +143,4 @@ $.fn.navbar = function(options){
     });
 
 };//donezoooh
-
 })(jQuery);
