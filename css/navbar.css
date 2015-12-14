@@ -33,11 +33,11 @@ a ul li{
   visibility: hidden;
 }
 
-#navbar.left {
+/*#navbar.left {
   left: 100%;
   margin-left: 0px;
   text-align: left;
-}
+}*/
 
 #navbar.right {
   right: 100%;
@@ -86,13 +86,13 @@ padding: .75em;
 }
 
 /*the menu icon*/
-#icon {
+/*#icon {
   width: 140px;
-}
-#icon:hover{
+}*/
+/*#icon:hover{
   color: #DC635F;
 
-}
+}*/
 
 
 /*general look and position of icon*/

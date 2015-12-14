@@ -72,12 +72,16 @@
 	                <input name="email" placeholder="yourname@gmail.com" type="text">
 	              <label>Status:</label>
 	                <input name="status" placeholder="Accepted into program" type="text">
+								<label>Test:</label>
+								<input type="text" placeholder="Company"  ng-model="newCompany"></input>
+
 	            </form>
 
 	          </div>
 	        </div>
 	        <div class="modal-footer">
-	          <button type="button" value="add" id="submitNewInfoButton" class="btn btn-submit" data-dismiss="modal">Submit</button>
+	          <button type="button" ng-click="addCompany()" value="add" id="submitNewInfoButton" class="btn btn-submit" data-dismiss="modal">Submit</button>
+
 	        </div>
 	      </div>
 	    </div>
@@ -85,7 +89,5 @@
 	</div>
 	<div class="addNewCompany">
 		<div ng-repeat="company in companies">{{ company.name }} {{company.linked }}</div>
-		<input type="text" placeholder="Company"  ng-model="newCompany"></input>
-		<a ng-click="addCompany()"><i class="fa fa-plus-circle fa-3x"></i></a>
 	</div>
 </body>

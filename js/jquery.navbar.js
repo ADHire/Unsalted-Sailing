@@ -6,6 +6,7 @@
           });
   });
 
+
 $.fn.navbar = function(options){
         $('body').prepend( '<span id="navbar_icon" class="hidden" href="#"></span>');
 
@@ -29,7 +30,7 @@ $.fn.navbar = function(options){
             options.position=settings.position;
         }
 
-        // First icon position
+        // Icon position
         if (options.position == 'right'){
             $menu_icon.addClass('right').removeClass('hidden');
         }
@@ -39,9 +40,9 @@ $.fn.navbar = function(options){
 
         //We're listening for click
         $menu_icon.click(function(event) {
-            if (options.position == 'right'){
-                navbarRight();
-            }
+            // if (options.position == 'right'){
+            //     navbarRight();
+            // }
             if (options.position == 'left'){
                 navbarLeft();
             }
@@ -78,7 +79,7 @@ $.fn.navbar = function(options){
                 backgroundPosition: '0px',
             },700,'easeOutExpo');
         }
-        function navbarLeft(){
+        function navbarLeft(){ // checking if navbar is open or not
             if( $menu_open === false){
                 openLeft();
                 $menu_open = true;
@@ -89,6 +90,7 @@ $.fn.navbar = function(options){
             }
         }
         //navbarLeft
+
 
         // Position the menu onResize
         function positionNav(){
