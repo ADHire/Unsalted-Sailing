@@ -4,10 +4,20 @@ html, body{
 }
 
 body {
-  background: #719EC3;
+  background: #A7C5CD;
   position: relative;
 }
+h3 small{
+  color: white;
+}
 
+h3:hover{
+  color: #DC635F;
+}
+
+a ul li{
+    text-decoration-style: none;
+}
 #navbar {
   z-index: 1000;
   position: fixed;

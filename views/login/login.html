@@ -1,4 +1,10 @@
-<input type="button"  value="Login" onclick="login()" />
+<!-- <input type="button"  value="Login" onclick="login()" />
 <div id="googleFirstName"></div>
 <div id="googleLastName"></div>
-<div id="googleImgSrc"></div>
+<div id="googleImgSrc"></div> -->
+<form>
+	<input type="text" placeholder="Username" name="username" id="username" />
+	<input type="password" placeholder="Password" name="password" id="password" />
+	<input type="Submit" value="Login" onclick="customerLogin()" />
+</form>
+<div class="g-signin2" data-onsuccess="onSignIn">Login</div>
