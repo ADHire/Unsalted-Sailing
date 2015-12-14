@@ -57,7 +57,7 @@ $.fn.navbar = function(options){
                 zIndex:"999",
                 right:"-=150"
             },300,'easeOutExpo').css({
-                position: 'absolute'
+                position: 'relative'
             });
             $menu_icon.animate({
                 left:"300",
