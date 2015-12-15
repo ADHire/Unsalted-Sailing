@@ -40,4 +40,9 @@ input[type=text]:focus,textarea:focus {
  position: fixed;
  bottom: 0px;
  right: 0px;
+ 
+}
+
+.newDiv{
+  border: 1em solid white;
 }

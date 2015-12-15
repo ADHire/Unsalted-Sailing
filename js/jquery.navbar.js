@@ -21,6 +21,15 @@ $.fn.navbar = function(options){
             scroll           : 'hidden'
         }, options);
 
+        $sided_menu.on('click', '.nav-icon', function() {
+       if (options.position == 'right'){
+              navbarRight();
+          }
+          if (options.position == 'left'){
+              navbarLeft();
+          }
+       })
+
         // This will set the menu position.
         $sided_menu.addClass('hidden');
 
