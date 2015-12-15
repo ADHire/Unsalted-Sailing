@@ -21,7 +21,6 @@
 
     <!-- editCompanyInfo CSS -->
     <link href="css/editCompanyInfo.css" rel="stylesheet" type="text/css">
-
 </head>
 
 <body ng-app="prepModule"> <!-- Applying prepModule to the body -->
@@ -36,17 +35,13 @@
   			</a></li>
   		<li><a class="nav-icon" href="#/companyLists">Companies<i class="fa fa-building-o fa-3x"></i></a>
   			</a></li>
-      <li><div class="g-signin2" data-onsuccess="onSignIn">Login</div>
-        </a></li>
       <li><a class="nav-icon" onclick="signOut()">Logout<i class="fa fa-sign-out fa-3x"></i></a>
         </a></li>
   	</ul>
   </nav>
 
 
-
 	<!-- JavaScript/JQuery/Angular CDN's -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!--jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> <!--angylar -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script> <!--route -->
@@ -59,16 +54,16 @@
     <script src="js/addNewCompanyFormStyle.js"></script>
 	  <script src="js/jquery.navbar.js"></script>
     <script src="js/prepModule.js"></script>
-    <script src="js/companyLists.js" type="text/javascript"> </script>
+    <!-- <script src="js/companyLists.js" type="text/javascript"> </script> -->
     <script src="js/editCompanyInfo.js" type="text/javascript"></script>
     <script src="js/landing.js"></script>
-    <script src="js/login.js"></script>
 
 
 
   <!-- Google+ API nonsense -->
   <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="js/ballinGoogleLogin.js"></script>
   <meta name="google-signin-client_id" content="499389684761-rgv5n1qo8rev89egdde05da41u78edvv.apps.googleusercontent.com">
-  <script src="js/googleSignIn.js"></script>
+  <!-- <script src="js/googleSignIn.js"></script> -->
 </body>
 </html>

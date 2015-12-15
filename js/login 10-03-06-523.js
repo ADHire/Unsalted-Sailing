@@ -1,5 +1,5 @@
-// var app = angular.module('prepModule');
-// app.factory('customerLogin', function() {
+var app = angular.module('prepModule');
+app.factory('customerLogin', function() {
 function customerLogin() {
 	var tSwift = {
 	'firstName': 'Taylor',
@@ -20,4 +20,4 @@ function customerLogin() {
 	}
 };
 
-// });
+});

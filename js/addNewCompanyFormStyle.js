@@ -20,12 +20,12 @@ var $textInput = $('input:text');
 $('#theform').on('submit', function(e){
   console.log('poop');
     e.preventDefault();
-    var name = $textInput.val();
-    $textInput.val(null);
-    var $theUl = $('#theUL');
-    $theUl.append("<li> Taken by, " + name + "!</li>");
-    $addNewInfo.text(name);
-    $addNewInfo.addClass('unavailable');
+    // var name = $textInput.val();
+    // $textInput.val(null);
+    // var $theUl = $('#theUL');
+    // $theUl.append("<li> Taken by, " + name + "!</li>");
+    // $addNewInfo.text(name);
+    // $addNewInfo.addClass('unavailable');
 });
 
 })(jQuery);

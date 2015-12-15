@@ -18,6 +18,10 @@ h3:hover{
 a ul li{
     text-decoration-style: none;
 }
+
+li .socialMediaIcon {
+  padding-right: 10px;
+}
 #navbar {
   z-index: 1000;
   position: fixed;
